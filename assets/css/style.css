@@ -1248,17 +1248,22 @@ a:hover {
 
 @media (min-width: 768px) {
   .intro .intro-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 992px) {
   .intro .intro-title {
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 80px;
+    line-height: 80px;
     font-family: "Roboto", sans-serif;
     letter-spacing: normal;
     word-spacing: 0px;
+  }
+}
+@media (min-width: 1199px) {
+  .intro .intro-title {
+    font-size: 100px;
   }
 }
 
@@ -2207,6 +2212,9 @@ a:hover {
   }
   .input_div{
     width: 100%;
+  }
+  .headerLogo{
+    width: 150px;
   }
 }
 @media (max-width: 520px) {
