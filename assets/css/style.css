@@ -2491,3 +2491,29 @@ footer .credits{
 .credits a:hover{
   color: #ffffff;
 }
+
+.whatsapp_button{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: fit-content;
+  font-size: 25px;
+  color: #ffffff;
+  background: #25D366;
+  z-index: 99;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid #25D366;
+  font-weight: 600;
+  transition: all .5s;
+}
+.whatsapp_button span{
+  position: absolute;
+  transform: translateX(100%);
+  margin-left: 8px;
+}
+.whatsapp_button:hover span{
+  transform: translateX(-100%);
+  position: relative;
+  color: #ffffff;
+}
