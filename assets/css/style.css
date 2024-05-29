@@ -2506,6 +2506,10 @@ footer .credits{
   border: 1px solid #25D366;
   font-weight: 600;
   transition: all .5s;
+  overflow: hidden;
+}
+.whatsapp_button:hover{
+  color: #ffffff;
 }
 .whatsapp_button span{
   position: absolute;
@@ -2513,7 +2517,7 @@ footer .credits{
   margin-left: 8px;
 }
 .whatsapp_button:hover span{
-  transform: translateX(-100%);
   position: relative;
+  transform: translateX(-100%);
   color: #ffffff;
 }
