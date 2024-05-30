@@ -347,7 +347,7 @@ a:hover {
 
 .color-text-a {
   text-decoration: none;
-  color: #a6a5a5;
+  color: #d8d7d7;
 }
 
 .no-margin {
@@ -2474,7 +2474,7 @@ a:hover {
   margin-top: 50px;
 }
 .item-list-a a{
-  color: #a6a5a5;
+  color: #d8d7d7;
   transition: .3s;
 }
 .item-list-a a:hover{
@@ -2488,7 +2488,7 @@ a:hover {
   color: #000000;
 }
 .copyright.color-text-a span{
-  color: #a6a5a5;
+  color: #d8d7d7;
 }
 .section-footer ul {
   line-height: 2;
@@ -2505,7 +2505,8 @@ a:hover {
   color: #ffffff;
 }
 .list-unstyled li{
-  color: #a6a5a5 !important;
+  color: #d8d7d7 !important;
+  opacity: 1;
 }
 footer {
   background: #542C7B;
@@ -2520,7 +2521,7 @@ footer .copyright-footer {
 
 footer .credits{
   font-size: 14px;
-  color: #a6a5a5;
+  color: #d8d7d7;
   transition: .3s;
 }
 .credits a:hover{
@@ -2816,4 +2817,17 @@ footer .credits{
 }
 .master_plan{
   margin-bottom: -20px;
+}
+
+/* About us page */
+.ceo_massage{
+  flex-direction: row-reverse;
+}
+
+/* INvestment page */
+.detailsPage{
+  grid-template-columns: auto auto;
+}
+.floor_plan_img{
+  width: 100%;
 }
