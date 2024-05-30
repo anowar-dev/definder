@@ -2471,6 +2471,7 @@ a:hover {
 .section-footer {
   padding-top: 60px;
   background: #542C7B;
+  margin-top: 50px;
 }
 .item-list-a a{
   color: #a6a5a5;
@@ -2748,17 +2749,18 @@ footer .credits{
   padding-left: 0;
   margin-top: 20px;
 }
-.facilites_item .fCircle{
-  width: 2rem;
-  height: 2rem;
-  line-height: 2rem;
+.fCircle{
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
   border: 2px solid #000000;
   display: inline-block;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 5px;
   font-weight: 600;
   color: #000000;
+  text-transform: uppercase;
 }
 .gallery_inner{
   display: flex;
@@ -2797,4 +2799,18 @@ footer .credits{
 .download:hover{
   background: #ffffff;
   color: #542C7B;
+}
+.section-t3{
+  row-gap: 30px;
+}
+.tab_inner{
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.facilites_list{
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+.facilites_list li{
+  list-style: none;
 }
