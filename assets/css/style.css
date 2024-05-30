@@ -73,7 +73,7 @@ a:hover {
 
 .fun_fact_main{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 1rem;
 }
 .funfact_section{
@@ -106,30 +106,44 @@ a:hover {
   padding-top: 120px;
   background: #ffffff;
 }
-.card_single{
+.card_main_slide{
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  display: none;
+  height: 400px;
 }
-.card_single.active{
-  display: block;
-}
-.card_heading{
+.card_body_slide{
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  column-gap: 4%;
+}
+.card_single{
+  width: 48%;
+}
+.card_text{
+  width: 48%;
+}
+.card_body_slide.active{
+  opacity: 1;
+  transform: translateX(0);
 }
 .getCode_button{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   border: 1px solid #542C7B;
   border-radius: 50px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   color: #542C7B;
   transition: all .3s;
 } 
+.checklist_for_card{
+  margin-bottom: 10px;
+}
 .getCode_button:hover{
-  border-color: #B08961;
-  color: #B08961;
+ background: #542C7B;
+ color: #ffffff;
 }
 .card_img{
   width: 100%;
@@ -195,7 +209,7 @@ a:hover {
   opacity: .8;
 }
 .contact_info{
-  padding-left: 20px;
+  padding-left: 50px;
   box-sizing: border-box;
 }
 .contact_person{
@@ -204,12 +218,13 @@ a:hover {
   letter-spacing: 3px;
   color: #000000;
   margin-top: -5px;
+  margin-bottom: 25px;
 }
 .contact_info .email{
   font-size: 15px;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .contact_info .email span{
   margin-left: 5px;
@@ -218,20 +233,20 @@ a:hover {
   opacity: .6;
 }
 .visitDiv{
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .visitingAddress{
   font-size: 18px;
   color: #000000;
   font-weight: 400;
   opacity: .6;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 .contact_social{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 20px;
 }
 .social_icon{
   width: 2.2rem;
@@ -1205,6 +1220,12 @@ a:hover {
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: 500;
+}
+.intro .intro-body .price-a:hover{
+  background: #542C7B;
 }
 
 .intro .spacial {
@@ -2435,7 +2456,6 @@ a:hover {
 --------------------------------------------------------------*/
 .section-footer {
   padding-top: 60px;
-  margin-top: 60px;
   background: #542C7B;
 }
 .item-list-a a{
@@ -2493,18 +2513,17 @@ footer .credits{
 }
 
 .whatsapp_button{
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: 0;
   width: fit-content;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   background: #25D366;
   z-index: 99;
   padding: 5px 10px;
   border-radius: 15px;
   border: 1px solid #25D366;
-  font-weight: 600;
   transition: all .5s;
   overflow: hidden;
 }
@@ -2520,4 +2539,95 @@ footer .credits{
   position: relative;
   transform: translateX(-100%);
   color: #ffffff;
+}
+
+/* Return policy */
+.return_policy .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 150px 25px 50px 25px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.return_policy header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.return_policy header h1 {
+  font-size: 2.5em;
+  color: #542C7B;
+}
+
+.return_policy header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.return_policy section {
+  margin-bottom: 40px;
+}
+
+.return_policy h3 {
+  color: #333;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 5px;
+}
+
+.return_policy p, ul {
+  color: #555;
+}
+
+.return_policy ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.return_policy ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Slider discount */
+.sDiscountMain{
+  width: 33.33%;
+  background: #B08961;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: auto;
+  height: 250px;
+  position: relative;
+}
+.slider_discount{
+  width: fit-content;
+  min-height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider_discount .discount_title{
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 60px;
+}
+.slider_discount .discount_percent{
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 80px;
+  color: #542C7B;
+  letter-spacing: 8px;
+}
+
+/* Partenrs Slider */
+.partners_box{
+  margin-bottom: 0;
+  height: 100px;
+}
+.partners_box img{
+  height: 100px;
 }

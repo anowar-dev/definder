@@ -214,28 +214,3 @@
 })()
 
 // Card Slider
-$(document).ready(function(){
-  {
-    var currentIndex = 0;
-    var items = $('.card_single');
-    var itemAmt = items.length;
-
-    function cycleItems() {
-        items.removeClass('active');
-        items.eq(currentIndex).addClass('active');
-    }
-
-    function autoSlide() {
-        setInterval(function() {
-            currentIndex += 1;
-            if (currentIndex > itemAmt - 1) {
-                currentIndex = 0;
-            }
-            cycleItems();
-        }, 2000); // Change slide every 3 seconds
-    }
-
-    cycleItems();
-    autoSlide();
-  }
-})
