@@ -290,7 +290,7 @@
     <!-- ======= Fun Fact ======= -->
     <section class="funfact_section">
       <div class="container">
-        <div class="fun_fact_main row">
+        <div class="fun_fact_main row fade-in-section opecity">
           <!-- Fun fact Single -->
           <div class="fun_fact_single text-center">
             <i class="fa-solid fa-handshake"></i>
@@ -550,7 +550,7 @@
           <div id="testimonial-carousel" class="swiper">
             <div class="swiper-wrapper">
   
-              <div class="carousel-item-a swiper-slide">
+              <div class="carousel-item-a swiper-slide golden_card card_slider_open">
                 <div class="card_body_slide">
                   <div class="card_text">
                     <h2 class="card_title">Golden Card</h2>
@@ -570,7 +570,7 @@
                 </div>
               </div><!-- End carousel item -->
   
-              <div class="carousel-item-a swiper-slide">
+              <div class="carousel-item-a swiper-slide black_card card_slider_open">
                 <div class="card_body_slide">
                   <div class="card_text">
                     <h2 class="card_title">Blackberry Card</h2>
@@ -593,11 +593,54 @@
             </div>
           </div>
           <div class="testimonial-carousel-pagination carousel-pagination"></div>
-          <!-- single card body -->
-          
+          <!-- Card Slider  -->
+          <div class="card_Popup_main">
+            <!-- Card modal -->
+            <div class="card_modal_main black_card" >
+              <div class="card_modal_inner">
+                <div class="cModal_header">
+                  <h2 class="cModal_title">
+                    Card submit form
+                  </h2>
+                  <h2 class="cModal_close">
+                    <button class="card_modal_close"><i class="fa-solid fa-xmark fa-fw"></i></button>
+                  </h2>
+                </div>
+                <div class="cModal_body">
+                  <form action="#" class="card_submit_form">
+                    <input type="text" placeholder="BlackBerry Card" disabled>
+                    <input type="text" name="#" id="#" placeholder="Your name..">
+                    <input type="email" name="#" id="#" placeholder="Your Email">
+                    <input type="tel" name="#" id="#" placeholder="Your Mobile..">
+                    <button class="card_submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
 
-          <!-- single card body -->
-          
+            <!-- Card modal golden -->
+            <div class="card_modal_main golden golden_card">
+              <div class="card_modal_inner">
+                <div class="cModal_header">
+                  <h2 class="cModal_title">
+                    Card submit form
+                  </h2>
+                  <h2 class="cModal_close">
+                    <button class="card_modal_close"><i class="fa-solid fa-xmark fa-fw"></i></button>
+                  </h2>
+                </div>
+                <div class="cModal_body">
+                  <form action="#" class="card_submit_form">
+                    <input type="text" placeholder="Golden Card" disabled>
+                    <input type="text" name="#" id="#" placeholder="Your name..">
+                    <input type="email" name="#" id="#" placeholder="Your Email">
+                    <input type="tel" name="#" id="#" placeholder="Your Mobile..">
+                    <button class="card_submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
